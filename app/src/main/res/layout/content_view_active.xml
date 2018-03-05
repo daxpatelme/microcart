@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/ViewActive"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/inputCustomerId1"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Customer ID" />
+
+    <Button
+        android:id="@+id/buttonViewAc"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="View active accounts"
+        android:backgroundTint="@color/white"
+        android:onClick="viewAc"
+        android:textColor="@color/blue5"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/textAcAccounts"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Go Back to Admin view"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/white"
+        android:onClick="goAdminView"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Log Out and Go Back to Login Page"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/white"
+        android:onClick="logOut" />
+
+</LinearLayout>

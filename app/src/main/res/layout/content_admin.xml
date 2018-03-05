@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/cart1" />
+
+    <TextView
+        android:id="@+id/adminView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Welcome to administrator view :)"
+        />
+
+    <Button
+        android:id="@+id/buttonGoAuthenticate"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/button1"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue5"
+        android:onClick="goAuthenticate"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/buttonGoMakeUser"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Create new user"
+        android:backgroundTint="@color/white"
+        android:onClick="goMakeUser"
+        android:textColor="@color/blue5"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/buttonGoMakeAcc"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Create account for customer"
+        android:backgroundTint="@color/white"
+        android:onClick="goCreateAccount"
+        android:textColor="@color/blue5"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/buttonGoRestock"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="restock"
+        android:backgroundTint="@color/white"
+        android:onClick="goRestock"
+        android:textColor="@color/blue5"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/buttonGoAddItem"
+        android:layout_width="323dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="goAddItem"
+        android:textColor="@color/blue5"
+        android:text="add new item types" />
+
+    <Button
+        android:id="@+id/buttonGoViewHistory"
+        android:layout_width="323dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="goViewSales"
+        android:textColor="@color/blue5"
+        android:text="view sales historical records" />
+
+    <Button
+        android:id="@+id/buttonInactAccounts"
+        android:layout_width="323dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="goViewInactiveAccount"
+        android:textColor="@color/blue5"
+        android:text="view inactive accounts" />
+
+    <Button
+        android:id="@+id/buttonActAccounts"
+        android:layout_width="323dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="goViewActiveAccount"
+        android:textColor="@color/blue5"
+        android:text="view active accounts" />
+
+    <Button
+        android:id="@+id/dropDatabase"
+        android:layout_width="323dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="dropDatabase"
+        android:textColor="@color/blue5"
+        android:text="Drop Database" />
+
+    <Button
+        android:id="@+id/buttonSerializeDatabase"
+        android:layout_width="323dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="goSerializeDatabase"
+        android:textColor="@color/blue5"
+        android:text="Copy database" />
+
+    <Button
+        android:id="@+id/buttonDeserializeDatabase"
+        android:layout_width="323dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="goDeserializeDatabase"
+        android:textColor="@color/blue5"
+        android:text="Restore Database" />
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="323dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue5"
+        android:onClick="logOut"
+        android:text="Log Out and Go Back to Login Page" />
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="1"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.lenovo.salestest.makeUserActivity"
+    android:background="@drawable/phase3">
+
+
+    <TextView
+        android:id="@+id/employeeCreateNewCus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Make new customer or employee"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="16dp"
+        android:textSize="15dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/showUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="16dp"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/employeeCreateNewCus" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:hint="User Name"
+        android:layout_below="@+id/showUserInfo"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_alignStart="@+id/buttonLogOut" />
+
+    <EditText
+        android:id="@+id/inputAge"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:hint="User Age"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/inputName"
+        android:backgroundTint="@color/white"
+        android:layout_alignStart="@+id/buttonLogOut" />
+
+    <EditText
+        android:id="@+id/inputAddress"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User Address"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_alignBaseline="@+id/inputName"
+        android:layout_alignBottom="@+id/inputName"
+        android:backgroundTint="@color/white"
+        android:layout_alignEnd="@+id/buttonLogOut" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User Password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_alignBaseline="@+id/inputAge"
+        android:layout_alignBottom="@+id/inputAge"
+        android:backgroundTint="@color/white"
+        android:layout_alignEnd="@+id/buttonLogOut" />
+
+    <RadioButton
+        android:id="@+id/radioCus"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:text="Customer"
+        android:layout_alignBaseline="@+id/radioAdmin"
+        android:layout_alignBottom="@+id/radioAdmin"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:layout_alignStart="@+id/inputAge" />
+
+    <RadioButton
+        android:id="@+id/radioAdmin"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:text="Admin"
+        android:layout_below="@+id/inputAge"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:layout_toRightOf="@+id/radioCus"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/buttonCreateCus"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_alignBaseline="@+id/radioAdmin"
+        android:layout_alignBottom="@+id/radioAdmin"
+        android:onClick="makeUser"
+        android:backgroundTint="@color/white"
+        android:layout_alignEnd="@id/buttonLogOut"/>
+
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Go Back to Admin view"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/buttonCreateCus"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:onClick="goAdminView"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Log Out and Go Back to Login Page"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/buttonGoBack"
+        android:onClick="logOut"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

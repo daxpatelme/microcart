@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lenovo.salestest.firstAdminActivity"
+    android:background="@color/blue5">
+
+    <TextView
+        android:id="@+id/textFirstAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Create the first administrator" />
+
+    <TextView
+        android:id="@+id/showFirstAdminInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/inputAdminName"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User Name" />
+
+    <EditText
+        android:id="@+id/inputAdminAge"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User Age" />
+
+    <EditText
+        android:id="@+id/inputAdminAddress"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User Address" />
+
+
+    <EditText
+        android:id="@+id/inputAdminPw"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/createAdmin"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="createFirstAdmin"
+        android:text="Add First Admin" />
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="goBackIni"
+        android:text="go back to initialize page" />
+
+</LinearLayout>

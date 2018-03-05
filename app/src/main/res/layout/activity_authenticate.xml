@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lenovo.salestest.authenticateActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/phase3">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/cart1" />
+
+    <TextView
+        android:id="@+id/textAuthenticate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Authenticate new employee"
+        android:layout_marginLeft="2dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/inputEmployeeId_2"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Employee Id"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:id="@+id/inputEmployeePw"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonAuthenticate"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="authenticate_"
+        android:text="Authenticate" />
+
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Go Back to Employee's view"
+        android:backgroundTint="@color/white"
+        android:onClick="goAdminView"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Log Out and Go Back to Login Page"
+        android:onClick="logOut"
+        android:backgroundTint="@color/white" />
+
+
+</LinearLayout>

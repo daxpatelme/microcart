@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lenovo.salestest.InitializeActivity"
+    android:background="@color/blue5">
+
+    <TextView
+        android:id="@+id/showTextIni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Hello! Welcome to MicroCart initialize page:)" />
+
+    <TextView
+        android:id="@+id/createAllItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Create all items." />
+
+    <EditText
+        android:id="@+id/initializeItem"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Item Name" />
+
+    <EditText
+        android:id="@+id/initializePrice"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Item Price" />
+
+    <Button
+        android:id="@+id/buttonAddItem"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="addItemType"
+        android:text="Add Item Type" />
+
+    <TextView
+        android:id="@+id/createFirstAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Create the first administrator." />
+
+
+    <Button
+        android:id="@+id/goCreateAdmin"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="goFirstAdmin"
+        android:text="Go to Create First Admin" />
+
+    <Button
+        android:id="@+id/buttonGoLogin"
+        android:layout_width="323dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="goLogin"
+        android:text="Go to Login" />
+
+</LinearLayout>
